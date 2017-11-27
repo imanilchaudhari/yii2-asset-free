@@ -1,0 +1,24 @@
+{
+    "name": "imanilchaudhari/asset-free-yii2",
+    "description": "Yii 2 Advanced Project Template With Asset Free Bundles",
+    "type": "library",
+    "minimum-stability": "stable",
+	  "require": {
+      "php": ">=5.4.0",
+      "yiisoft/yii2": "~2.0.11"
+    },
+    "replace": {
+      "bower-asset/jquery": "*",
+      "bower-asset/jquery.inputmask": "*",
+      "bower-asset/inputmask": "*",
+      "bower-asset/punycode": "*",
+      "bower-asset/yii2-pjax": "*"
+    },
+    "conflict": {
+      "bower-asset/jquery": "*",
+      "bower-asset/jquery.inputmask": "*",
+      "bower-asset/inputmask": "*",
+      "bower-asset/punycode": "*",
+      "bower-asset/yii2-pjax": "*"
+    }
+}
