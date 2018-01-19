@@ -3,11 +3,13 @@
     "description": "Yii 2 Advanced Project Template With Asset Free Bundles",
     "type": "library",
     "minimum-stability": "stable",
-	  "require": {
+    "require": {
       "php": ">=5.4.0",
       "yiisoft/yii2": "~2.0.11"
     },
     "replace": {
+      "ezyang/htmlpurifier": "*",
+      "cebe/markdown": "*",
       "bower-asset/jquery": "*",
       "bower-asset/jquery.inputmask": "*",
       "bower-asset/inputmask": "*",
@@ -15,6 +17,8 @@
       "bower-asset/yii2-pjax": "*"
     },
     "conflict": {
+      "ezyang/htmlpurifier": "*",
+      "cebe/markdown": "*",
       "bower-asset/jquery": "*",
       "bower-asset/jquery.inputmask": "*",
       "bower-asset/inputmask": "*",
