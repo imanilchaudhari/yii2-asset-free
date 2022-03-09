@@ -2,6 +2,7 @@
     "name": "imanilchaudhari/yii2-asset-free",
     "description": "Yii 2 Advanced Project Template With Asset Free Bundles",
     "type": "library",
+    "license": "MIT",
     "minimum-stability": "stable",
     "require": {
       "php": ">=5.4.0",
