@@ -15,14 +15,5 @@
       "bower-asset/inputmask": "*",
       "bower-asset/punycode": "*",
       "bower-asset/yii2-pjax": "*"
-    },
-    "conflict": {
-      "ezyang/htmlpurifier": "*",
-      "cebe/markdown": "*",
-      "bower-asset/jquery": "*",
-      "bower-asset/jquery.inputmask": "*",
-      "bower-asset/inputmask": "*",
-      "bower-asset/punycode": "*",
-      "bower-asset/yii2-pjax": "*"
     }
 }
