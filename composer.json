@@ -1,20 +1,60 @@
 {
     "name": "imanilchaudhari/yii2-asset-free",
-    "description": "Yii 2 Advanced Project Template With Asset Free Bundles",
-    "type": "library",
-    "license": "MIT",
+    "description": "Yii 2 Project Template With Asset Free Bundles. Suitable for API & Console Apps",
+    "keywords": [
+        "yii2",
+        "asset free yii2"
+    ],
+    "type": "project",
+    "license": "BSD-3-Clause",
     "minimum-stability": "stable",
+    "prefer-stable": true,
     "require": {
-      "php": ">=5.4.0",
-      "yiisoft/yii2": "~2.0.11"
+        "php": ">=7.4.0",
+        "vlucas/phpdotenv": "^5.5",
+        "yiisoft/yii2": "~2.0.44",
+        "yiisoft/yii2-symfonymailer": "~2.0.3"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "codeception/codeception": "^4.2",
+        "codeception/module-asserts": "^1.0.0"
     },
     "replace": {
-      "ezyang/htmlpurifier": "*",
-      "cebe/markdown": "*",
-      "bower-asset/jquery": "*",
-      "bower-asset/jquery.inputmask": "*",
-      "bower-asset/inputmask": "*",
-      "bower-asset/punycode": "*",
-      "bower-asset/yii2-pjax": "*"
-    }
+        "ezyang/htmlpurifier": "*",
+        "cebe/markdown": "*",
+        "bower-asset/jquery": "*",
+        "bower-asset/jquery.inputmask": "*",
+        "bower-asset/inputmask": "*",
+        "bower-asset/punycode": "*",
+        "bower-asset/yii2-pjax": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests"
+        }
+    },
+    "config": {
+        "process-timeout": 1800,
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
